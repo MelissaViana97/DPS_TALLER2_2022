@@ -9,10 +9,10 @@ const peliculas = {
     comedia: [
         {
             id: 1,
-            nombre: 'Un espia y medio',
-            img: 'https://musicimage.xboxlive.com/catalog/video.movie.8D6KGX0S31L3/image?locale=es-es&mode=crop&purposes=BoxArt&q=90&h=225&w=150&format=jpg',
-            trailer: "Y_QsbgfNp6g/hqdefault.jpg",
-            anio: 2016
+            nombre: 'Son como niños 2',
+            img: 'https://mx.web.img3.acsta.net/pictures/20/07/07/00/55/1740448.jpg',
+            trailer: "EJlI-peYPVs/hq720.jpg",
+            anio: 2016,
         },
         {
             id: 2,
@@ -54,7 +54,7 @@ const peliculas = {
         {
             id: 1,
             nombre: 'Bajo la misma estrella',
-            img: 'https://prod-ripcut-delivery.disney-plus.net/v1/variant/disney/5C306EBB9CBDD39FC2D72BD79A063838810C4C9F1913AAEA3C9AF3E3FB01F279/scale?width=1200&aspectRatio=1.78&format=jpeg',
+            img: 'https://es.web.img3.acsta.net/pictures/14/02/05/16/10/034641.jpg',
             trailer: "KiFGEwueNFU/hqdefault.jpg",
             anio: 2014
         },

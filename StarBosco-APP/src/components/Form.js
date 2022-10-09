@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View, TextInput } from 'react-native';
 import RNPickerSelect from 'react-native-picker-select'
 
-//DATOS PARA LOS ITEMS DE LOS RNPICKERSELECT
+
 const sizes = [
     { label: 'Short 8 onz.', value: 1 },
     { label: 'Tall 12 onz.', value: 1.5 },
@@ -23,7 +23,7 @@ const tiposPago = [
 
 const Form = ({ state, setState }) => {
 
-    //Funcion para agregar al estado global el tamaño de café
+    
     const setSize = (value, index) => {
 
         if(value !== null)
@@ -44,7 +44,7 @@ const Form = ({ state, setState }) => {
         setState( {...state} );
     }
 
-    //Funcion para agregar al estado global el tipo de café
+   
     const setTipoC = (value, index) => {
         if(value !== null)
         {
@@ -64,7 +64,7 @@ const Form = ({ state, setState }) => {
         setState( {...state} );
     }
 
-    //Funcion para agregar al estado global el tipo de pago
+   
     const setPago = (value, index) => {
         if(value !== null)
         {
@@ -86,7 +86,7 @@ const Form = ({ state, setState }) => {
         setState( {...state} );
     }
 
-    //Funcion para agregar al estado global la cantidad
+  
     const setcantidad = (value) => {
         if( value > 0)
         {
@@ -180,27 +180,34 @@ const styles = StyleSheet.create({
     },
 });
 
+
+
 const picketSelectStyles = StyleSheet.create({ 
-    inputIOS: { 
-        fontSize: 16,
-        borderWidth: 1, 
-        borderColor: 'grey', 
-        borderRadius: 4, 
-        color: 'black', 
-        backgroundColor: '#fff',
-        height: 50,
-        marginBottom: 15,
-    }, 
+
     inputAndroid: { 
-        fontSize: 16,
-        borderWidth: 0.5, 
-        borderColor: 'grey', 
-        borderRadius: 8, 
         color: 'black',
         backgroundColor: '#fff',
         height: 50,
         marginBottom: 15,
+        fontSize: 16,
+        borderWidth: 0.5, 
+        borderColor: 'grey', 
+        borderRadius: 8, 
+     
+    },
+
+    inputIOS: { 
+        color: 'black', 
+        backgroundColor: '#fff',
+        height: 50,
+        marginBottom: 15,
+        fontSize: 16,
+        borderWidth: 1, 
+        borderColor: 'grey', 
+        borderRadius: 4, 
+      
     }, 
+    
 });
 
 export default Form

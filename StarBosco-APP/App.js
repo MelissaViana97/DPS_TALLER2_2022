@@ -39,14 +39,11 @@ export default function App() {
     }
     else if(!state.cantidad > 0)
     {
-      setError('Ingrese la cantidad de cafe a comprar');
+      setError('Ingrese la cantidad de cafe que desea comprar');
     }
     else
     {
-      const { cantidad, size, tipoCafe, descuento } = state;
-      let subtotal = cantidad * ( size.value + tipoCafe.value );
-
-      let valor = roundToTwo(subtotal * (1 - descuento));
+      const { cantidad, size, tipoCafe, descuento } = state; let subtotal = cantidad * ( size.value + tipoCafe.value );let valor = roundToTwo(subtotal * (1 - descuento));
 
       setError('');
       setState({ ...state, subtotal, total: valor });
@@ -71,7 +68,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'green',
+    backgroundColor: 'red',
     height: 275,
     borderBottomLeftRadius: 5,
     borderBottomRightRadius: 5,
