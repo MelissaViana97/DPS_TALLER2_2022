@@ -3,11 +3,6 @@ import { StyleSheet, View, TextInput } from 'react-native';
 import RNPickerSelect from 'react-native-picker-select'
 
 
-const sizes = [
-    { label: 'Short 8 onz.', value: 1 },
-    { label: 'Tall 12 onz.', value: 1.5 },
-    { label: 'Grande 16 onz.', value: 2 },
-]
 
 const tiposCafe = [
     { label: 'Mocha', value: 2 },
@@ -15,6 +10,12 @@ const tiposCafe = [
     { label: 'Americano', value: 1.5 },
     { label: 'Frapper', value: 3 },
 ]
+const sizes = [
+    { label: 'Short 8 onz.', value: 1 },
+    { label: 'Tall 12 onz.', value: 1.5 },
+    { label: 'Grande 16 onz.', value: 2 },
+]
+
 
 const tiposPago = [
     { label: 'Efectivo', value: 'efectivo' },
