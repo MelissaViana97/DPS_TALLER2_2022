@@ -11,7 +11,7 @@ const Carousel = ({ data, setPreview }) => {
                 return(
                     <TouchableHighlight
                         onPress = { () => setPreview(item.trailer) }
-                        underlayColor="white"
+                        underlayColor="red"
                     >
                         <View style = { styles.pelicula}>
                             <Image style = { styles.image } source = {{ uri: item.img }} />

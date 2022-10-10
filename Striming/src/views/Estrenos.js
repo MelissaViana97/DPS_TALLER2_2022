@@ -5,45 +5,45 @@ import { WebView } from 'react-native-webview';
 const dataEstrenos = [
     {
         id: '1',
-        titulo: 'GHOSTBUSTERS: AFTERLIFE (Película)',
-        descripcion: 'Titulada en español Casafantasmas: más allá es una comedia de ficción sobre fantasmas y seres sobrenaturales.',
-        fechaEstreno: '11/11/2021',
-        trailer: '19UEx4pU1bo/hq720.jpg'
+        titulo: 'Black Adam (Película)',
+        descripcion: 'En la antigua Kahndaq, Teth Adam recibio los poderes omnipotentes de los dioses. Tras utilizar estos poderes para vengarse, fue encarcelado, convirtiendose en Black Adam.',
+        fechaEstreno: '19 de octubre',
+        trailer: 'kOFTZWyaOgc/hq720.jpg'
     },
     {
         id: '2',
-        titulo: 'SPIDER-MAN NO WAY HOME (Película)',
-        descripcion: 'El Hombre Araña regresa en un nuevo estreno de la exitosa franquicia de superhéroes basada en el personaje de Marvel Comics.',
-        fechaEstreno: '17/12/2021',
-        trailer: 'rt-2cxAiPJk/hq720.jpg'
+        titulo: 'coldplay (Película)',
+        descripcion: 'Disfruta em tu cine mas cercano del imponente espectaculo de la gira mundial Music of The Spheres de Coldplay que esta batiendo todos los records.',
+        fechaEstreno: '28 de octubre 2022',
+        trailer: 'yeIdPxvF6jk/hq720.jpg'
     },
     {
         id: '3',
-        titulo: 'ENCANTO (Película)',
-        descripcion: 'Los Madrigal es una familia extraordinaria que vive en las montañas de Colombia en un precioso lugar oculto llamado Encanto. Cada niño de esta familia posee un don especial excepto Mirabel.',
-        fechaEstreno: '24/11/2021',
-        trailer: 'E4dCY_DvT-4/hq720.jpg'
+        titulo: 'La invitación al infierno (Película)',
+        descripcion: 'Una joven es cortejada y enamorada, solo para darse cuenta de que una conspiracion gotica esta en marcha.',
+        fechaEstreno: '9 de octubre DE 2022',
+        trailer: 'MWnl2fVQZOI/hq720.jpg'
     },
     {
         id: '4',
-        titulo: 'You (Serie)',
-        descripcion: 'Una historia de amor del siglo XXI sobre un obsesivo, pero brillante mánager de 20 años de una librería, quien utiliza la era digital hiperconectada para enamorar a la mujer de sus sueños.',
-        fechaEstreno: '15/10/2021',
-        trailer: 'NqrlWUmpVLg/hq720.jpg'
+        titulo: 'Amsterdam(Serie)',
+        descripcion: 'Ambientada en los anios 30, sigue a tres amigos que son testigos de un asesinato, se convierten en sospechosos y descubren uno de los complots mas escandalosos de la historia de Estados Unidos.',
+        fechaEstreno: '10 de octubre de 2022',
+        trailer: 'Xp42uIKRJ9c/hq720.jpg'
     },
     {
         id: '5',
-        titulo: 'Legends of Tomorrow (Serie)',
-        descripcion: 'El viajero del tiempo Rip Hunter regresa al presente y forma una insólita coalición de superhéroes y villanos para salvar el mundo de un peligro terrible que amenaza con destruir no solo el planeta, sino incluso el propio tiempo.',
-        fechaEstreno: '15/10/2021',
-        trailer: 'P2z4chki7Ac/hq720.jpg'
+        titulo: 'Vista por ultima vez(Serie)',
+        descripcion: 'Will Spann esta llevando a su futura ex esposa, Lisa, a la casa de sus padres cuando desaparece misteriosamente. Decidido a encontrar a Lisa, Will se sumergira en el área criminal de la ciudad mientras escapa de las autoridades.',
+        fechaEstreno: '11 de octubre 2022',
+        trailer: 'lCfkf7YebMg/hq720.jpg'
     },
     {
         id: '6',
-        titulo: 'Luis Miguel, la serie (Serie)',
-        descripcion: 'La verdadera historia de Luis Miguel, el máximo ícono de la música en español. Una mirada completa y autorizada por el artista sobre la vida íntima y profesional de este cantante enigmático, elusivo y a la vez adorado.',
-        fechaEstreno: '28/10/2021',
-        trailer: '7Oj2SNULn8c/hq720.jpg'
+        titulo: 'sonrie (Serie)',
+        descripcion: 'Despues de ser testigo de un extranio y traumatico accidente que involucro a una paciente, la Dr. Rose Cotter empieza a experimentar sucesos aterradores que no puede explicarse.',
+        fechaEstreno: '12 de octubre 2022',
+        trailer: 'yhKiQGJop_8/hq720.jpg'
         
         
     },
@@ -61,7 +61,7 @@ const Estrenos = () => {
                         <View style = { styles.video }>
                             <WebView
                                 source={{
-                                    uri: `https://www.youtube.com/embed/2qCmRJz3NOE`
+                                    uri: `https://www.youtube.com/embed/${item.trailer}`
                                     //${item.trailer}
                                 }} 
                             />
